@@ -1,0 +1,30 @@
+.coupon {
+  min-width: 200px;
+  margin-bottom: 30px;
+  flex-grow: 1;
+}
+
+.coupon h3 {
+  padding-bottom: 15px;
+}
+
+.coupon input {
+  padding: 10px 20px;
+  outline: none;
+  width: 60%;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #e2e9e1;
+}
+@media (600px > width) {
+  .coupon input {
+    width: 100%;
+    font-size: 14px;
+  }
+}
+
+.coupon button {
+  background-color: var(--main-color);
+  color: #fff;
+  padding: 12px 20px;
+}

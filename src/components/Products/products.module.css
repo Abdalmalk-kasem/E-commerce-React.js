@@ -1,0 +1,13 @@
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 23%));
+  padding-top: 20px;
+  justify-content: space-between;
+}
+
+@media (930px > width) {
+  .products {
+    justify-content: center;
+    gap: 20px;
+  }
+}

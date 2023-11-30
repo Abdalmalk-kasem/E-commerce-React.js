@@ -1,0 +1,9 @@
+.blogsContainer {
+  padding: 150px 150px 0 150px;
+}
+
+@media (767px > width) {
+  .blogsContainer {
+    padding: 40px 40px 0 40px;
+  }
+}

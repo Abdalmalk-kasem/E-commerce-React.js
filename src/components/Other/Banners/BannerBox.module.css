@@ -1,0 +1,39 @@
+.bannerBox {
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 50dvh;
+  background-size: cover;
+  background-position: top 30% right 30%;
+}
+
+.bannerBox .heading4,
+.bannerBox h2,
+.bannerBox span {
+  color: #f1f1f1;
+}
+
+.bannerBox > .heading4 {
+  color: #f1f1f1;
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.bannerBox h2 {
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.bannerBox span {
+  font-size: 14px;
+  font-weight: 500;
+  padding-bottom: 30px;
+}
+
+.bannerBox button:hover {
+  border-color: rgba(245, 245, 245, 0.692);
+  background-color: var(--main-color);
+}

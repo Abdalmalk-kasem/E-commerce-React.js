@@ -1,0 +1,27 @@
+.banner3 {
+  padding: 0 80px 80px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+}
+
+@media (767px > width) {
+  .banner3 {
+    justify-content: center;
+  }
+}
+
+.banner3 .box3 {
+  background-color: #5e6c73;
+  background-image: url(/src/assests/banner/b7.webp);
+}
+
+.banner3 .box4 {
+  background-color: #443a31;
+  background-image: url(/src/assests/banner/b4.webp);
+}
+
+.banner3 .box5 {
+  background-color: #97afaa;
+  background-image: url(/src/assests/banner/b18.webp);
+}

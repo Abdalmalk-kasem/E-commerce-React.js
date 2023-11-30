@@ -1,0 +1,54 @@
+.cartContainer {
+  overflow-x: auto;
+}
+
+.cartContainer table {
+  border-collapse: collapse;
+  table-layout: fixed;
+  white-space: nowrap;
+  width: 100%;
+  min-width: 1200px;
+}
+
+.cartContainer table img {
+  width: 70px;
+}
+
+.cartContainer table thead {
+  border: 1px solid #e2e9e1 !important;
+  border-left: none !important;
+  border-right: none !important;
+}
+
+.cartContainer table td,
+.cartContainer table th {
+  padding: 15px;
+  text-align: center;
+}
+
+.cartContainer table td .removeBtn {
+  border: none;
+  padding: 10px 20px;
+  background-color: #dd0909;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+.cartContainer table td > input.quantity {
+  width: 40px;
+  height: 30px;
+  text-align: center;
+}
+
+.cartMessage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 80px auto;
+}

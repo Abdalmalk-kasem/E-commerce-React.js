@@ -1,0 +1,71 @@
+.product {
+  padding: 10px 12px;
+  border: 1px solid #cce7d0;
+  box-shadow: 20px 20px 30px rgb(0 0 0 / 0.02);
+  margin: 15px 0;
+  border-radius: 25px;
+  width: 250px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  transition: var(--trans03-transition);
+  -webkit-transition: var(--trans03-transition);
+  -moz-transition: var(--trans03-transition);
+  -ms-transition: var(--trans03-transition);
+  -o-transition: var(--trans03-transition);
+}
+
+.product:hover {
+  box-shadow: 20px 20px 30px rgb(0 0 0 / 0.06);
+}
+
+.product .des {
+  text-align: start;
+  padding: 10px 0;
+}
+
+.product .brand {
+  color: #606063;
+  font-size: 12px;
+}
+
+.product .title {
+  color: var(--black-color);
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+  margin: 5px 0;
+}
+
+.product footer {
+  color: var(--main-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product footer a {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  background-color: #e8f6ea;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: var(--trans03-transition);
+  -webkit-transition: var(--trans03-transition);
+  -moz-transition: var(--trans03-transition);
+  -ms-transition: var(--trans03-transition);
+  -o-transition: var(--trans03-transition);
+}
+
+.product footer a:hover {
+  color: white;
+  background-color: var(--main-color);
+}

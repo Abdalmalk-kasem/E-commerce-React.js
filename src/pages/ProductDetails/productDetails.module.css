@@ -1,0 +1,45 @@
+.productDetails {
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  gap: 60px;
+}
+
+.productDetails .singleProImage {
+  flex-grow: 1;
+  max-width: 500px;
+}
+
+.productDetails .smallImagesGroup {
+  display: flex;
+  gap: 5px;
+  width: 100%;
+}
+
+.productDetails .smallImagesGroup .smallImage {
+  cursor: pointer;
+}
+
+.productDetails .details .productName {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.productDetails .details .price {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.productDetails .details .productD {
+  max-width: 39ch;
+  min-width: 20ch;
+  line-height: 25px;
+}
+
+.productDetails .details .productD h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}

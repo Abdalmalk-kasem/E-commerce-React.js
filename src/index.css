@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@200;300;400;500;600;700&display=swap");
+:root {
+  --main-color: #07736b;
+  --black-color: #1a1a1a;
+  --header-color: #222;
+  --p-color: #465b52;
+  --bg-color: #e3e6f3;
+  --feature-hov-pink: #fddde475;
+  --feature-hov-green: #cdebbc75;
+  --feature-hov-light-blue: #d1e8f275;
+  --feature-hov-dark-blue: #cdd4f875;
+  --feature-hov-purple: #f6dbf675;
+  --feature-hov-orange: #fff2e575;
+  --primary-login-dark-color: #0d7069;
+  --secondary-login-color: #252c6a;
+  --error-color: #cc3333;
+  --success-color: #4bb544;
+  --border-rad4: 4px;
+  --section-padding: 60px;
+  --trans03-transition: 0.3s;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Global Rules Start */
+
+body {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+select,
+textarea {
+  outline: none;
+}
+
+h1 {
+  font-size: 50px;
+  line-height: 64px;
+  color: var(--header-color);
+  line-height: 0;
+}
+
+h2 {
+  font-size: 46px;
+  line-height: 54px;
+  color: var(--header-color);
+}
+
+.heading4 {
+  font-weight: bold;
+  font-size: 20px;
+  color: var(--header-color);
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 12px;
+}
+
+p {
+  font-size: 16px;
+  color: var(--p-color);
+  margin: 15px 0 20px 0;
+}
+
+/* Global Rules End */
+
+/* Componats Start */
+
+.d-flex-cc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#page-header {
+  width: 100%;
+  height: 40dvh;
+  background-size: cover;
+  flex-direction: column;
+  padding: 14px;
+}
+
+#page-header h2,
+#page-header p {
+  color: #fff;
+}
+
+.section-p1 {
+  padding: 40px 80px;
+}
+
+.section-m1 {
+  margin: 40px 0;
+}
+
+button.normal {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 15px 30px;
+  color: #000;
+  background-color: white;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: var(--border-rad4);
+  -webkit-border-radius: var(--border-rad4);
+  -moz-border-radius: var(--border-rad4);
+  -ms-border-radius: var(--border-rad4);
+  -o-border-radius: var(--border-rad4);
+  transition: var(--trans03-transition);
+  -webkit-transition: var(--trans03-transition);
+  -moz-transition: var(--trans03-transition);
+  -ms-transition: var(--trans03-transition);
+  -o-transition: var(--trans03-transition);
+}
+
+button.white {
+  font-size: 13px;
+  font-weight: 600;
+  padding: 11px 18px;
+  color: #fff;
+  background-color: transparent;
+  cursor: pointer;
+  border: 1px solid #fff;
+  outline: none;
+  transition: var(--trans03-transition);
+  -webkit-transition: var(--trans03-transition);
+  -moz-transition: var(--trans03-transition);
+  -ms-transition: var(--trans03-transition);
+  -o-transition: var(--trans03-transition);
+}
+
+.price {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.price,
+footer a {
+  color: var(--main-color);
+}
+
+.prices {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.oldPrice {
+  font-weight: bold;
+  font-size: 15px;
+  color: rgba(203, 49, 49, 0.904);
+  position: relative;
+}
+
+.oldPrice::before,
+.oldPrice::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  top: 45%;
+  left: 5%;
+  background-color: rgba(238, 73, 73, 0.959);
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+.oldPrice::before {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+.oldPrice::after {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+}
+
+@media (767px > width) {
+  h1 {
+    font-size: 34px;
+    line-height: 30px;
+    color: var(--header-color);
+  }
+  h2 {
+    font-size: 28px;
+    line-height: 54px;
+    color: var(--header-color);
+  }
+  .heading4 {
+    font-size: 15px;
+    color: var(--header-color);
+  }
+  .section-p1 {
+    padding: 20px 30px;
+  }
+}
+
+/* Componats End */

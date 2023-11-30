@@ -1,0 +1,31 @@
+.callAction {
+  flex-direction: column;
+  text-align: center;
+  background-color: #080e1e;
+  background-image: url(/src/assests/banner/b2.webp);
+  width: 100%;
+  height: 40dvh;
+  background-size: cover;
+  background-position: center;
+}
+
+.callAction span {
+  font-weight: bold;
+  color: #fff;
+  font-size: 16px;
+}
+
+.callAction h2 {
+  color: #fff;
+  font-size: 30px;
+  padding: 10px 0;
+}
+
+.callAction h2 span {
+  color: #ef3636;
+}
+
+.callAction button:hover {
+  background-color: var(--main-color);
+  color: #fff;
+}

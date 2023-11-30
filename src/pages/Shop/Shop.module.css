@@ -1,0 +1,105 @@
+.pagination {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.pagination a {
+  padding: 15px 20px;
+  background-color: var(--main-color);
+  color: #fff;
+  font-weight: 600;
+  border-radius: var(--border-rad4);
+  -webkit-border-radius: var(--border-rad4);
+  -moz-border-radius: var(--border-rad4);
+  -ms-border-radius: var(--border-rad4);
+  -o-border-radius: var(--border-rad4);
+}
+
+.pagination a.icon > iconify-icon {
+  margin: -3px 0;
+}
+
+.prodetails {
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  gap: 60px;
+}
+
+.prodetails .singleProImage {
+  flex-grow: 1;
+  max-width: 500px;
+}
+
+.prodetails .smallImagesGroup {
+  display: flex;
+  gap: 5px;
+  width: 100%;
+}
+
+.prodetails .smallImagesGroup .smallImage {
+  cursor: pointer;
+}
+
+.prodetails .details .productName {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.prodetails .details .price {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.prodetails .details form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: fit-content;
+}
+
+.prodetails .details form .countSub {
+  height: 40px;
+  margin-bottom: 40px;
+}
+
+.prodetails .details form .countSub input {
+  height: 100%;
+}
+
+.prodetails .details form .countSub input[type="number"] {
+  text-align: center;
+}
+
+.prodetails .details form .countSub input[type="submit"] {
+  font-size: 14px;
+  margin-left: 10px;
+  font-weight: 600;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: var(--main-color);
+  cursor: pointer;
+  border: none;
+  border-radius: var(--border-rad4);
+  -webkit-border-radius: var(--border-rad4);
+  -moz-border-radius: var(--border-rad4);
+  -ms-border-radius: var(--border-rad4);
+  -o-border-radius: var(--border-rad4);
+}
+
+.prodetails .details .productD {
+  max-width: 39ch;
+  min-width: 20ch;
+  line-height: 25px;
+}
+
+.prodetails .details .productD h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}

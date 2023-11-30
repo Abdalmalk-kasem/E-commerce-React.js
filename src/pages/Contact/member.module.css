@@ -1,0 +1,17 @@
+.contactUs .teamMember .member {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.contactUs .teamMember .member p {
+  font-size: 13px;
+  line-height: 25px;
+  margin: 5px;
+}
+
+.contactUs .teamMember .member img {
+  width: 65px;
+  height: 65px;
+  object-fit: cover;
+}

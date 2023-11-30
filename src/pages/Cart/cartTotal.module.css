@@ -1,0 +1,29 @@
+.cartTotal h3 {
+  padding-bottom: 15px;
+}
+
+.cartTotal button {
+  background-color: var(--main-color);
+  color: #fff;
+  padding: 12px 20px;
+}
+
+.cartTotal {
+  flex-grow: 1;
+  margin-bottom: 30px;
+  border: 1px solid #e2e9e1;
+  padding: 30px;
+}
+
+.cartTotal table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.cartTotal table td {
+  width: 50%;
+  border: 1px solid #e2e9e1;
+  padding: 10px;
+  font-size: 13px;
+  text-align: start;
+}

@@ -1,0 +1,92 @@
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media (767px > width) {
+  .footer {
+    padding: 20px 40px;
+  }
+}
+
+.footer .col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 20px 0;
+}
+
+.footer .logo {
+  margin-bottom: 30px;
+}
+
+.footer .heading4 {
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--header-color);
+  margin-bottom: 20px;
+}
+
+.footer p {
+  font-size: 13px;
+  margin: 0 0 8px 0;
+}
+
+.footer a {
+  font-size: 13px;
+  color: var(--header-color);
+  margin-bottom: 10px;
+  transition: var(--trans03-transition);
+  -webkit-transition: var(--trans03-transition);
+  -moz-transition: var(--trans03-transition);
+  -ms-transition: var(--trans03-transition);
+  -o-transition: var(--trans03-transition);
+}
+
+.footer .social {
+  gap: 5px;
+  display: flex;
+}
+
+.footer a:hover {
+  color: var(--main-color);
+  scale: 1.1;
+}
+
+.footer .links img {
+  margin: 10px 2px 15px;
+  border: 1px solid var(--main-color);
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+.footer .paymentMethods img {
+  margin: 10px 0;
+}
+
+.rights {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+  gap: 2px;
+}
+
+.rights .heart {
+  color: #0c897f;
+}
+
+.rights .name {
+  color: #0e6862;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+@media (767px > width) {
+  .rights {
+    font-size: 14px;
+  }
+}

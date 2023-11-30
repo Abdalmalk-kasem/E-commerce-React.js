@@ -1,0 +1,78 @@
+{
+  "database": {
+    "rules": "database.rules.json",
+    "cors": [
+      {
+        "origin": [
+          "http://localhost:3000"
+        ],
+        "method": [
+          "GET",
+          "PUT",
+          "POST",
+          "DELETE",
+          "OPTIONS"
+        ],
+        "maxAgeSeconds": 3600,
+        "responseHeader": [
+          "Content-Type",
+          "Access-Control-Allow-Origin"
+        ]
+      }
+    ],
+    "hosting": {
+      "public": "dist",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "headers": [
+        {
+          "source": "**/*.{js,css,html}",
+          "headers": [
+            {
+              "key": "Content-Encoding",
+              "value": "gzip"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "functions": [
+    {
+      "source": "functions",
+      "codebase": "default",
+      "ignore": [
+        "node_modules",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log"
+      ],
+      "predeploy": [
+        "npm --prefix \"$RESOURCE_DIR\" run lint"
+      ]
+    }
+  ],
+  "hosting": {
+    "public": "dist",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

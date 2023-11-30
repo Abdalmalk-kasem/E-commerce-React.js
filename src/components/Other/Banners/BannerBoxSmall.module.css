@@ -1,0 +1,23 @@
+.bannerBox {
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  min-width: 30%;
+  height: 30dvh;
+  background-size: cover;
+  background-position: center;
+}
+
+.bannerBox .heading4 {
+  color: #f1f1f1;
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.bannerBox h3 {
+  color: #c5413cde;
+  font-size: 15px;
+  font-weight: 800;
+}

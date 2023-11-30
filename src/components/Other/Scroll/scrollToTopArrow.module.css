@@ -1,0 +1,17 @@
+.upArrow {
+  padding: 5px;
+  position: fixed;
+  right: -100px;
+  bottom: 30px;
+  background-color: var(--main-color);
+  cursor: pointer;
+  transition: var(--trans03-transition);
+  -webkit-transition: var(--trans03-transition);
+  -moz-transition: var(--trans03-transition);
+  -ms-transition: var(--trans03-transition);
+  -o-transition: var(--trans03-transition);
+}
+
+.upArrow.active {
+  right: 30px;
+}
