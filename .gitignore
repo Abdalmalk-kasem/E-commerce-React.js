@@ -27,3 +27,5 @@ database.rules.json
 *.njsproj
 *.sln
 *.sw?
+
+.vercel

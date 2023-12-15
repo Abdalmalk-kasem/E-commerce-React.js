@@ -7,18 +7,13 @@ import {
 import RootLayout from "./pages/Roots/Root";
 import Error from "./components/UI/Error";
 import LoadingEffect from "./components/UI/LoadingEffect";
-import { CartItemsProvider } from "./store/shopping-cart";
+import { CartItemsProvider } from "./contexts/shopping-cart";
 import ScrollToTop from "./components/Other/Scroll/ScrollToTop";
 import ScrollToTopArrow from "./components/Other/Scroll/ScrollToTopArrow";
 
 import { lazy } from "react";
 
-import Authentication, {
-  action as authAction,
-} from "./pages/Authentication/Authentication";
-
-import { action as logoutAction } from "./util/logout";
-import { tokenLoader } from "./util/auth";
+import { AuthProvider } from "./contexts/AuthContext";
 
 const HomePage = lazy(() => import("./pages/Home/Home"));
 const ShopPage = lazy(() => import("./pages/Shop/Shop"));
@@ -30,6 +25,7 @@ const SourcesPage = lazy(() => import("./pages/Sources/Sources"));
 const ProductDetails = lazy(() =>
   import("./pages/ProductDetails/ProductDetails")
 );
+const AuthForm = lazy(() => import("./pages/Authentication/AuthForm"));
 
 const PRODUCTSURL = import.meta.env.VITE_PRODUCTS_API;
 const BLOGSURL = import.meta.env.VITE_BLOGSURL_API;
@@ -39,13 +35,14 @@ const router = createBrowserRouter([
     path: "/",
     id: "root",
     element: (
-      <CartItemsProvider>
-        <ScrollToTop />
-        <RootLayout />
-        <ScrollToTopArrow />
-      </CartItemsProvider>
+      <AuthProvider>
+        <CartItemsProvider>
+          <ScrollToTop />
+          <RootLayout />
+          <ScrollToTopArrow />
+        </CartItemsProvider>
+      </AuthProvider>
     ),
-    loader: tokenLoader,
     errorElement: <Error />,
     children: [
       {
@@ -92,12 +89,7 @@ const router = createBrowserRouter([
       { path: "contact", element: <ContactPage /> },
       {
         path: "auth",
-        element: <Authentication />,
-        action: authAction,
-      },
-      {
-        path: "logout",
-        action: logoutAction,
+        element: <AuthForm />,
       },
       { path: "cart", element: <CartPage /> },
       { path: "sources", element: <SourcesPage /> },

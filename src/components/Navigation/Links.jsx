@@ -1,11 +1,33 @@
 /* eslint-disable react/prop-types */
-import { Form } from "react-router-dom";
+import { Form, useNavigate, useNavigation } from "react-router-dom";
 import AnchorLink from "../UI/AnchorLink";
 import Button from "../UI/Button";
 import { Icon } from "@iconify/react";
 import classes from "./mainNavigation.module.css";
+import { useEffect, useState } from "react";
+import { useAuth } from "../../contexts/AuthContext";
 
-const Links = ({ isLoggedIn }) => {
+const Links = () => {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const { logout, currentUser, error } = useAuth();
+
+  const handleLogout = async () => {
+    try {
+      await logout();
+      setIsLoggedIn(false);
+    } catch {
+      error("Faild to sign out");
+    }
+  };
+
+  useEffect(() => {
+    if (currentUser) {
+      setTimeout(() => {
+        setIsLoggedIn(currentUser);
+      }, 500);
+    }
+  }, [currentUser]);
+
   return (
     <>
       <AnchorLink
@@ -53,7 +75,7 @@ const Links = ({ isLoggedIn }) => {
         </AnchorLink>
       )}
       {isLoggedIn && (
-        <Form action="/logout" method="post">
+        <Form onSubmit={handleLogout}>
           <Button className={classes.logoutBtn}>Logout</Button>
         </Form>
       )}

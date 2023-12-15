@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { useContext, useEffect, useState } from "react";
-import { CartItems } from "/src/store/shopping-cart";
+import { CartItems } from "/src/contexts/shopping-cart";
 import classes from "./addToCartForm.module.css";
 import Input from "../../components/UI/Input";
 import Button from "../../components/UI/Button";

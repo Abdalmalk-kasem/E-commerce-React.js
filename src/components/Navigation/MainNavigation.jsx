@@ -4,17 +4,8 @@ import AnchorLink from "../UI/AnchorLink";
 import Image from "../UI/Image";
 import MobileNavigation from "./MobileNavigation";
 import Links from "./Links";
-import { useRouteLoaderData } from "react-router-dom";
-import { useEffect, useState } from "react";
 
 const MainNavigation = () => {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const token = useRouteLoaderData("root");
-
-  useEffect(() => {
-    setIsLoggedIn(token);
-  }, [token]);
-
   const menuHandler = (action) => {
     const linksElement = document.querySelector(`.${classes.links}`);
 
@@ -59,7 +50,7 @@ const MainNavigation = () => {
             />
           </svg>
         </div>
-        <Links isLoggedIn={isLoggedIn} />
+        <Links />
       </div>
       <MobileNavigation className={classes.mobile} menuHandler={menuHandler} />
     </header>
