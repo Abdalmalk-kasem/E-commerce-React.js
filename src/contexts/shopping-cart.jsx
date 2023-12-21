@@ -23,7 +23,7 @@ export const CartItemsProvider = ({ children }) => {
       (cartItem) =>
         cartItem.id === item.id &&
         cartItem.size === item.size &&
-        cartItem.image === item.image
+        cartItem.imageSrc === item.imageSrc
     );
 
     if (existingItemIndex === -1) {
