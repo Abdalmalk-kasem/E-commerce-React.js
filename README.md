@@ -1,8 +1,22 @@
-# React + Vite
+# E-commerce App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Demo:** [E-commerce App Demo](https://e-commerce-app-29287.web.app)  
 
-Currently, two official plugins are available:
+I led the development of a fully functional E-commerce app as a solo developer. The primary goal was to apply and enhance my skills in React and Single Page Application (SPA) development. Utilizing HTML, CSS, and ReactJS, I implemented various features, including a responsive design, an authentication page, and seamless navigation using React Router DOM.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Technologies Used:
+- HTML/CSS/ReactJS
+- React Router DOM
+- Context API
+- Blurhash (for image placeholders)
+- Iconify (for icons)
+- Firebase (for storing products, blogs, cart data, hosting, and authentication)
+
+### Challenges:
+Encountering challenges in routing, managing actions, and optimizing performance during the development, I implemented solutions such as using Blurhash for images, lazy loading for components, and optimizing image size to enhance overall application performance.
+
+### Achievements:
+The project successfully demonstrated my ability to build a fully responsive and performant e-commerce application using a variety of technologies. Despite challenges in implementing authentication without a backend, I integrated Firebase to store essential data, showcasing adaptability in problem-solving.
+
+### Authentication Feature:
+The app includes a robust authentication system implemented with Firebase Authentication. Users can register, log in, and log out securely. Firebase Realtime Database is utilized to store user data, providing a seamless and secure authentication experience.
