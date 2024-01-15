@@ -62,7 +62,7 @@ const ProductDetails = () => {
               onClick={imageClickHandler}
             />
           </div>
-          <div style={{ width: "121px", height: "121px" }}>
+          <div>
             <Image
               imageSrc="https://firebasestorage.googleapis.com/v0/b/e-commerce-app-29287.appspot.com/o/images%2Ff3.webp?alt=media&token=e06d890a-90e9-4596-8c51-1e4be90afd75"
               imageHash="fsPP.Rof?wayRjjtt8fjV@ayfkj[%NayRPfQRjj[tRayWBj[aea|t7j[RifQozf6"

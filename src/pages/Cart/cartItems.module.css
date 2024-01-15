@@ -29,6 +29,7 @@
 .cartContainer table td .removeBtn {
   border: none;
   padding: 10px 20px;
+  position: relative;
   background-color: #dd0909;
   color: white;
   font-weight: 500;
@@ -38,6 +39,42 @@
   -moz-border-radius: 6px;
   -ms-border-radius: 6px;
   -o-border-radius: 6px;
+}
+
+.cartContainer table td .removeBtn::after,
+.cartContainer table td .removeBtn::before {
+  position: absolute;
+  opacity: 0;
+  transition: var(--trans03-transition);
+  -webkit-transition: var(--trans03-transition);
+  -moz-transition: var(--trans03-transition);
+  -ms-transition: var(--trans03-transition);
+  -o-transition: var(--trans03-transition);
+}
+
+.cartContainer table td .removeBtn::after {
+  content: "it doesn't work";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: -13px;
+  top: -50px;
+  padding: 10px 10px;
+  background-color: var(--error-color);
+}
+
+.cartContainer table td .removeBtn::before {
+  content: "";
+  border-color: var(--error-color) transparent transparent transparent;
+  border-width: 10px;
+  border-style: solid;
+  top: -12px;
+  left: 40px;
+}
+
+.cartContainer table td .removeBtn:hover::after,
+.cartContainer table td .removeBtn:hover::before {
+  opacity: 1;
 }
 
 .cartContainer table td > input.quantity {

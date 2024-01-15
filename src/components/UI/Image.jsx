@@ -11,6 +11,9 @@ const Image = ({
   ...props
 }) => {
   const [isLoaded, setIsLoaded] = useState(false);
+
+  const smallScreenWidth = 600; // Set your desired small screen width
+
   return (
     <>
       <div style={{ display: isLoaded ? "none" : "inline-block" }}>
@@ -19,7 +22,7 @@ const Image = ({
             hash={imageHash}
             resolutionX={32}
             resolutionY={32}
-            width={width}
+            width={width} // Adjust the Blurhash width as needed
             height={height}
             style={{ borderRadius: `${borderRadius}px` }}
           ></Blurhash>
@@ -29,8 +32,9 @@ const Image = ({
         onLoad={() => setIsLoaded(true)}
         src={imageSrc}
         style={{
-          width: width,
-          height: height,
+          width: "100%", // Set initial width to 100%
+          maxWidth: `${smallScreenWidth}px`, // Set max-width for small screens
+          maxHeight: height === width ? `${smallScreenWidth}px` : height,
           borderRadius: `${borderRadius}px`,
           loading: "lazy",
           display: isLoaded ? "inline-block" : "none",

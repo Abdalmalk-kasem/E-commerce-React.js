@@ -43,3 +43,6 @@
   font-size: 24px;
   margin-bottom: 20px;
 }
+
+@media (width <= 768px) {
+}

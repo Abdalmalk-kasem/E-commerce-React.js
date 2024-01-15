@@ -6,9 +6,9 @@ import Section from "/src/components/UI/Section";
 import p1Image from "/src/assests/people/1.webp";
 import p2Image from "/src/assests/people/2.webp";
 import NewsLetters from "/src/components/Other/NewsLetters/NewsLetters";
-import Member from "./member";
-import Input from "../../components/UI/Input";
-import Button from "../../components/UI/Button";
+import Member from "./Member.jsx";
+import Input from "/src/components/UI/Input";
+import Button from "/src/components/UI/Button";
 
 const Contact = () => {
   return (
