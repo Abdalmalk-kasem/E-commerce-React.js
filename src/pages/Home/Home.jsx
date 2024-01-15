@@ -4,7 +4,7 @@ import Landing from "./Landing.jsx";
 import ProductsSection from "./ProductsSection.jsx";
 import CallAction from "./CallAction.jsx";
 import SmBanners from "./SmBanners.jsx";
-import SmallBanners from "./smallBanners.jsx";
+import SmallBanners from "./SmallBanners.jsx";
 import LoadingSuspense from "/src/components/UI/LoadingSuspense.jsx";
 
 const HomePage = () => {
