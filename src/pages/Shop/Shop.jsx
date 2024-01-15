@@ -1,11 +1,11 @@
 import { useState } from "react";
-import PageHeader from "/src/components/UI/PageHeader";
+import PageHeader from "/src/components/UI/PageHeader.jsx";
 import pageHeaderImage from "/src/assests/banner/b1.webp";
-import Products from "/src/components/Products/Products";
-import Pagination from "../../components/UI/Pagination";
+import Products from "/src/components/Products/Products.jsx";
+import Pagination from "../../components/UI/Pagination.jsx";
 import { useRouteLoaderData } from "react-router-dom";
-import Section from "/src/components/UI/Section";
-import NewsLetters from "/src/components/Other/NewsLetters/NewsLetters";
+import Section from "/src/components/UI/Section.jsx";
+import NewsLetters from "/src/components/Other/NewsLetters/NewsLetters.jsx";
 
 const Shop = () => {
   const products = useRouteLoaderData("products");

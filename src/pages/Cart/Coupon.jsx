@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
-import Button from "/src/components/UI/Button";
-import Input from "/src/components/UI/Input";
+import Button from "/src/components/UI/Button.jsx";
+import Input from "/src/components/UI/Input.jsx";
 import classes from "./coupon.module.css";
 
 const Coupon = ({ setCouponValue }) => {

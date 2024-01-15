@@ -2,7 +2,7 @@ import classes from "./mainNavigation.module.css";
 import logo from "/src/assests/logo.webp";
 import AnchorLink from "../UI/AnchorLink";
 import Image from "../UI/Image";
-import MobileNavigation from "./MobileNavigation";
+import MobileNavigation from "./MobileNavigation.jsx";
 import Links from "./Links";
 
 const MainNavigation = () => {

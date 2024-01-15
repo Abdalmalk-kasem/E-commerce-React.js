@@ -3,8 +3,8 @@ import { Icon } from "@iconify/react";
 
 import classes from "./product.module.css";
 import React from "react";
-import Image from "../UI/Image";
-import AnchorLink from "../UI/AnchorLink";
+import Image from "../UI/Image.jsx";
+import AnchorLink from "../UI/AnchorLink.jsx";
 
 const Product = ({ product }) => {
   const { image, imageHash, brand, title, rate, price, oldPrice, id } = product;

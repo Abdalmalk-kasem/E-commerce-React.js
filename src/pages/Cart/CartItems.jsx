@@ -1,10 +1,10 @@
 /* eslint-disable react/prop-types */
 import { useEffect } from "react";
-import Section from "/src/components/UI/Section";
+import Section from "/src/components/UI/Section.jsx";
 import classes from "./cartItems.module.css";
-import Button from "/src/components/UI/Button";
-import Input from "/src/components/UI/Input";
-import Image from "/src/components/UI/Image";
+import Button from "/src/components/UI/Button.jsx";
+import Input from "/src/components/UI/Input.jsx";
+import Image from "/src/components/UI/Image.jsx";
 
 const CartItems = ({ items, setTotalPrice }) => {
   let totalPrice = 0;

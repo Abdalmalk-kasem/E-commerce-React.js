@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { json } from "react-router-dom";
-import Button from "../../components/UI/Button";
+import Button from "../../components/UI/Button.jsx";
 import classes from "./cartTotal.module.css";
 
 const CartTotal = ({

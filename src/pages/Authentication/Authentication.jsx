@@ -1,5 +1,5 @@
 import { json, redirect } from "react-router-dom";
-import AuthForm from "./AuthForm";
+import AuthForm from "./AuthForm.jsx";
 
 const Authentication = () => {
   return <AuthForm />;

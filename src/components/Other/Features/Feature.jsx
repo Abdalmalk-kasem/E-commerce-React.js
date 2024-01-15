@@ -1,4 +1,4 @@
-import Image from "/src/components/UI/Image";
+import Image from "/src/components/UI/Image.jsx";
 
 /* eslint-disable react/prop-types */
 const Feature = ({ className, image, alt, text, imageHash }) => {

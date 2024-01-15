@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import BlogBox from "./blogBox";
+import BlogBox from "./blogBox.jsx";
 
 const Blogs = ({ blogs }) => {
   return (

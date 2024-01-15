@@ -1,8 +1,8 @@
 import { useRef } from "react";
 import classes from "./NewsLetters.module.css";
-import Section from "/src/components/UI/Section";
-import Input from "../../UI/Input";
-import Button from "../../UI/Button";
+import Section from "/src/components/UI/Section.jsx";
+import Input from "../../UI/Input.jsx";
+import Button from "../../UI/Button.jsx";
 
 const NewsLetters = () => {
   const inputRef = useRef();

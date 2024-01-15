@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
-import Image from "/src/components/UI/Image";
-import Section from "/src/components/UI/Section";
+import Image from "/src/components/UI/Image.jsx";
+import Section from "/src/components/UI/Section.jsx";
 import classes from "./productDetails.module.css";
 import { useParams, useRouteLoaderData } from "react-router-dom";
-import AddToCartForm from "/src/pages/ProductDetails/AddToCartForm";
-import LoadingEffect from "/src/components/UI/LoadingEffect";
+import AddToCartForm from "/src/pages/ProductDetails/AddToCartForm.jsx";
+import LoadingEffect from "/src/components/UI/LoadingEffect.jsx";
 
 const ProductDetails = () => {
   const [mainImage, setMainImage] = useState(null);

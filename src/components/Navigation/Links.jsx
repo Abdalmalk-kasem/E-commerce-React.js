@@ -1,11 +1,11 @@
 /* eslint-disable react/prop-types */
-import { Form, useNavigate, useNavigation } from "react-router-dom";
-import AnchorLink from "../UI/AnchorLink";
-import Button from "../UI/Button";
+import { Form } from "react-router-dom";
+import AnchorLink from "../UI/AnchorLink.jsx";
+import Button from "../UI/Button.jsx";
 import { Icon } from "@iconify/react";
 import classes from "./mainNavigation.module.css";
 import { useEffect, useState } from "react";
-import { useAuth } from "../../contexts/AuthContext";
+import { useAuth } from "../../contexts/AuthContext.jsx";
 
 const Links = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);

@@ -1,7 +1,7 @@
-import Button from "/src/components/UI/Button";
-import Input from "/src/components/UI/Input";
+import Button from "/src/components/UI/Button.jsx";
+import Input from "/src/components/UI/Input.jsx";
 import classes from "./authForm.module.css";
-import Section from "/src/components/UI/Section";
+import Section from "/src/components/UI/Section.jsx";
 
 const loginInputs = () => {
   return (

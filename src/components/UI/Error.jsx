@@ -1,5 +1,5 @@
 import { useLocation, useRouteError } from "react-router-dom";
-import AnchorLink from "./AnchorLink";
+import AnchorLink from "./AnchorLink.jsx";
 import classes from "./error.module.css";
 
 const Error = () => {

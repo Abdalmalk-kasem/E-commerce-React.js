@@ -1,5 +1,5 @@
-import BannerBox from "/src/components/Other/Banners/BannerBox";
-import Section from "/src/components/UI/Section";
+import BannerBox from "/src/components/Other/Banners/BannerBox.jsx";
+import Section from "/src/components/UI/Section.jsx";
 import classes from "./smBanners.module.css";
 
 const SmBanners = () => {

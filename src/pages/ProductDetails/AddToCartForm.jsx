@@ -2,8 +2,8 @@
 import { useContext, useEffect, useState } from "react";
 import { CartItems } from "/src/contexts/shopping-cart";
 import classes from "./addToCartForm.module.css";
-import Input from "../../components/UI/Input";
-import Button from "../../components/UI/Button";
+import Input from "../../components/UI/Input.jsx";
+import Button from "../../components/UI/Button.jsx";
 
 import Swal from "sweetalert2";
 

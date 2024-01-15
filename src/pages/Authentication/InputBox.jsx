@@ -1,6 +1,6 @@
 import { forwardRef } from "react";
 import classes from "./authForm.module.css";
-import Input from "/src/components/UI/Input";
+import Input from "/src/components/UI/Input.jsx";
 
 const InputBox = forwardRef(function InputBox({ placeholder, ...props }, ref) {
   return (

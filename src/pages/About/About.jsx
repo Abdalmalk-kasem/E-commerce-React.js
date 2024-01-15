@@ -1,13 +1,13 @@
-import Image from "/src/components/UI/Image";
-import NewsLetters from "/src/components/Other/NewsLetters/NewsLetters";
+import Image from "/src/components/UI/Image.jsx";
+import NewsLetters from "/src/components/Other/NewsLetters/NewsLetters.jsx";
 
 import aboutHeaderImage from "/src/assests/about/banner.webp";
 import aboutImage from "/src/assests/about/a6.webp";
 import aboutVideo from "/src/assests/about/1.mp4";
-import Section from "/src/components/UI/Section";
+import Section from "/src/components/UI/Section.jsx";
 import classes from "./about.module.css";
-import Features from "/src/components/Other/Features/Features";
-import PageHeader from "/src/components/UI/PageHeader";
+import Features from "/src/components/Other/Features/Features.jsx";
+import PageHeader from "/src/components/UI/PageHeader.jsx";
 
 const About = () => {
   return (

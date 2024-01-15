@@ -1,7 +1,7 @@
 import Section from "/src/components/UI/Section";
 import classes from "./authForm.module.css";
 import { useSearchParams } from "react-router-dom";
-import AuthenticationForm from "./AuthenticationForm";
+import AuthenticationForm from "./AuthenticationForm.jsx";
 
 const AuthForm = () => {
   const [searchParams] = useSearchParams();

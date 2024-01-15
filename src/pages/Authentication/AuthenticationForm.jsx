@@ -1,9 +1,9 @@
 /* eslint-disable react/prop-types */
-import InputBox from "./InputBox";
-import Button from "/src/components/UI/Button";
-import AnchorLink from "/src/components/UI/AnchorLink";
+import InputBox from "./InputBox.jsx";
+import Button from "/src/components/UI/Button.jsx";
+import AnchorLink from "/src/components/UI/AnchorLink.jsx";
 import classes from "./authForm.module.css";
-import { useAuth } from "/src/contexts/AuthContext";
+import { useAuth } from "/src/contexts/AuthContext.jsx";
 import { useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 

@@ -1,11 +1,11 @@
-import Features from "/src/components/Other/Features/Features";
-import NewsLetters from "/src/components/Other/NewsLetters/NewsLetters";
-import Landing from "./Landing";
-import ProductsSection from "./ProductsSection";
-import CallAction from "./CallAction";
-import SmBanners from "./SmBanners";
-import SmallBanners from "./smallBanners";
-import LoadingSuspense from "../../components/UI/LoadingSuspense";
+import Features from "/src/components/Other/Features/Features.jsx";
+import NewsLetters from "/src/components/Other/NewsLetters/NewsLetters.jsx";
+import Landing from "./Landing.jsx";
+import ProductsSection from "./ProductsSection.jsx";
+import CallAction from "./CallAction.jsx";
+import SmBanners from "./SmBanners.jsx";
+import SmallBanners from "./smallBanners.jsx";
+import LoadingSuspense from "/src/components/UI/LoadingSuspense.jsx";
 
 const HomePage = () => {
   return (

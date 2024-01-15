@@ -1,8 +1,8 @@
 import { Outlet } from "react-router-dom";
-import MainNavigation from "/src/components/Navigation/MainNavigation";
-import Footer from "../../components/Footer/Footer";
+import MainNavigation from "/src/components/Navigation/MainNavigation.jsx";
+import Footer from "../../components/Footer/Footer.jsx";
 import { Suspense } from "react";
-import LoadingEffect from "../../components/UI/LoadingEffect";
+import LoadingEffect from "../../components/UI/LoadingEffect.jsx";
 
 const RootLayout = () => {
   return (

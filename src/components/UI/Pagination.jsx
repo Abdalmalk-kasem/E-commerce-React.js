@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { useEffect, useState } from "react";
-import AnchorLink from "./AnchorLink";
+import AnchorLink from "./AnchorLink.jsx";
 
 import classes from "./Pagination.module.css";
 import { Icon } from "@iconify/react";

@@ -1,5 +1,5 @@
-import Section from "/src/components/UI/Section";
-import Feature from "./Feature";
+import Section from "/src/components/UI/Section.jsx";
+import Feature from "./Feature.jsx";
 import classes from "./Features.module.css";
 
 import f1 from "/src/assests/features/f1.webp";

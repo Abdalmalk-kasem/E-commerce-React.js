@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import { json } from "react-router-dom";
-import PageHeader from "/src/components/UI/PageHeader";
+import PageHeader from "/src/components/UI/PageHeader.jsx";
 import cartImage from "/src/assests/banner/cart-banner.webp";
-import CartItems from "./CartItems";
-import CartCheckout from "./CartCheckout";
+import CartItems from "./CartItems.jsx";
+import CartCheckout from "./CartCheckout.jsx";
 
 const CARTURL = import.meta.env.VITE_CART_API;
 

@@ -1,6 +1,6 @@
-import BannerBoxSmall from "/src/components/Other/Banners/BannerBoxSmall";
+import BannerBoxSmall from "/src/components/Other/Banners/BannerBoxSmall.jsx";
 import classes from "./smallBanners.module.css";
-import Section from "/src/components/UI/Section";
+import Section from "/src/components/UI/Section.jsx";
 
 const SmallBanners = () => {
   return (

@@ -1,10 +1,10 @@
-import PageHeader from "/src/components/UI/PageHeader";
+import PageHeader from "/src/components/UI/PageHeader.jsx";
 import classes from "./blog.module.css";
 import blogImage from "/src/assests/banner/b19.webp";
-import Section from "/src/components/UI/Section";
+import Section from "/src/components/UI/Section.jsx";
 import Blogs from "./Blogs";
-import Pagination from "../../components/UI/Pagination";
-import NewsLetters from "/src/components/Other/NewsLetters/NewsLetters";
+import Pagination from "../../components/UI/Pagination.jsx";
+import NewsLetters from "/src/components/Other/NewsLetters/NewsLetters.jsx";
 import { useState } from "react";
 import { useLoaderData } from "react-router-dom";
 

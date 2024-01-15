@@ -1,14 +1,14 @@
-import PageHeader from "/src/components/UI/PageHeader";
+import PageHeader from "/src/components/UI/PageHeader.jsx";
 
 import classes from "./contact.module.css";
 import contactHeaderImage from "/src/assests/about/banner.webp";
-import Section from "/src/components/UI/Section";
+import Section from "/src/components/UI/Section.jsx";
 import p1Image from "/src/assests/people/1.webp";
 import p2Image from "/src/assests/people/2.webp";
-import NewsLetters from "/src/components/Other/NewsLetters/NewsLetters";
+import NewsLetters from "/src/components/Other/NewsLetters/NewsLetters.jsx";
 import Member from "./Member.jsx";
-import Input from "/src/components/UI/Input";
-import Button from "/src/components/UI/Button";
+import Input from "/src/components/UI/Input.jsx";
+import Button from "/src/components/UI/Button.jsx";
 
 const Contact = () => {
   return (

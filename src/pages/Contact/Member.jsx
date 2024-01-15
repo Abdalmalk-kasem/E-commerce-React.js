@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import Image from "/src/components/UI/Image";
+import Image from "/src/components/UI/Image.jsx";
 import classes from "./member.module.css";
 
 const Member = ({ imageSrc, imageHash, alt, name, title, phone, email }) => {

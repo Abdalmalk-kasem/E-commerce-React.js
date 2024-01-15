@@ -4,28 +4,28 @@ import {
   createBrowserRouter,
 } from "react-router-dom";
 
-import RootLayout from "./pages/Roots/Root";
-import Error from "./components/UI/Error";
-import LoadingEffect from "./components/UI/LoadingEffect";
-import { CartItemsProvider } from "./contexts/shopping-cart";
-import ScrollToTop from "./components/Other/Scroll/ScrollToTop";
-import ScrollToTopArrow from "./components/Other/Scroll/ScrollToTopArrow";
+import RootLayout from "./pages/Roots/Root.jsx";
+import Error from "./components/UI/Error.jsx";
+import LoadingEffect from "./components/UI/LoadingEffect.jsx";
+import { CartItemsProvider } from "./contexts/shopping-cart.jsx";
+import ScrollToTop from "./components/Other/Scroll/ScrollToTop.jsx";
+import ScrollToTopArrow from "./components/Other/Scroll/ScrollToTopArrow.jsx";
 
 import { lazy } from "react";
 
-import { AuthProvider } from "./contexts/AuthContext";
+import { AuthProvider } from "./contexts/AuthContext.jsx";
 
-const HomePage = lazy(() => import("./pages/Home/Home"));
-const ShopPage = lazy(() => import("./pages/Shop/Shop"));
-const BlogPage = lazy(() => import("./pages/Blog/Blog"));
-const CartPage = lazy(() => import("./pages/Cart/Cart"));
-const AboutPage = lazy(() => import("./pages/About/About"));
-const ContactPage = lazy(() => import("./pages/Contact/Contact"));
-const SourcesPage = lazy(() => import("./pages/Sources/Sources"));
+const HomePage = lazy(() => import("./pages/Home/Home.jsx"));
+const ShopPage = lazy(() => import("./pages/Shop/Shop.jsx"));
+const BlogPage = lazy(() => import("./pages/Blog/Blog.jsx"));
+const CartPage = lazy(() => import("./pages/Cart/Cart.jsx"));
+const AboutPage = lazy(() => import("./pages/About/About.jsx"));
+const ContactPage = lazy(() => import("./pages/Contact/Contact.jsx"));
+const SourcesPage = lazy(() => import("./pages/Sources/Sources.jsx"));
 const ProductDetails = lazy(() =>
-  import("./pages/ProductDetails/ProductDetails")
+  import("./pages/ProductDetails/ProductDetails.jsx")
 );
-const AuthForm = lazy(() => import("./pages/Authentication/AuthForm"));
+const AuthForm = lazy(() => import("./pages/Authentication/AuthForm.jsx"));
 
 const PRODUCTSURL = import.meta.env.VITE_PRODUCTS_API;
 const BLOGSURL = import.meta.env.VITE_BLOGSURL_API;

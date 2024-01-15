@@ -1,6 +1,6 @@
-import AnchorLink from "../../components/UI/AnchorLink";
+import AnchorLink from "../../components/UI/AnchorLink.jsx";
 import classes from "./landing.module.css";
-import Section from "/src/components/UI/Section";
+import Section from "/src/components/UI/Section.jsx";
 
 const Landing = () => {
   return (

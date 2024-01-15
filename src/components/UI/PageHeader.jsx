@@ -1,4 +1,4 @@
-import Section from "./Section";
+import Section from "./Section.jsx";
 
 /* eslint-disable react/prop-types */
 const PageHeader = ({ title, paragraph, image, id, className, noBg }) => {

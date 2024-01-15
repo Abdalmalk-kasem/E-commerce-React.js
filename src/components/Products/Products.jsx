@@ -1,9 +1,8 @@
 /* eslint-disable react/prop-types */
-import { json } from "react-router-dom";
-import Product from "./Product";
+import Product from "./Product.jsx";
 import classes from "./products.module.css";
 import { Suspense } from "react";
-import LoadingEffect from "../UI/LoadingEffect";
+import LoadingEffect from "../UI/LoadingEffect.jsx";
 
 const Products = ({ products, start, end }) => {
   const productsArr = products.slice(start, end);

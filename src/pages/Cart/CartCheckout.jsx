@@ -1,10 +1,10 @@
 /* eslint-disable react/prop-types */
 
-import Section from "/src/components/UI/Section";
+import Section from "/src/components/UI/Section.jsx";
 import { useState } from "react";
 import classes from "./cartCheckout.module.css";
-import Coupon from "./Coupon";
-import CartTotal from "./CartTotal";
+import Coupon from "./Coupon.jsx";
+import CartTotal from "./CartTotal.jsx";
 
 const CartCheckout = ({ totalPrice, itemsLength, setItems, CARTURL }) => {
   const [couponValue, setCouponValue] = useState(0);
